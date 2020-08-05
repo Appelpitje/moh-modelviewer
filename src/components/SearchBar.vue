@@ -1,18 +1,14 @@
 <template>
   <div id="searchBar">
-      <input type="text"/>
+    <input type="text" />
   </div>
 </template>
 
 <script>
 export default {
   name: "searchBar",
-  components: {
-
-  }
+  components: {}
 };
 </script>
 
-<style>
-
-</style>
+<style></style>
