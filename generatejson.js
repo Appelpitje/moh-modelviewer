@@ -5,7 +5,7 @@ if (module.parent == undefined) {
   var list = [];
   fs.readdirSync(folder).forEach(file => {
     var object = {
-      name: file,
+      name: file.replace(".obj", ""),
       path: folder.replace("./public", "") + "/" + file
     };
     list.push(object);

@@ -1,5 +1,5 @@
 <template>
-  <model-obj :backgroundAlpha="0" src="/obj/m1_garand.obj"></model-obj>
+  <model-obj :backgroundAlpha="0" src="/files/mohdm1.obj"></model-obj>
 </template>
 
 <script>
