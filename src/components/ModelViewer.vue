@@ -1,5 +1,5 @@
 <template>
-  <model-obj :backgroundAlpha="0" src="/files/mohdm1.obj"></model-obj>
+  <model-obj :backgroundAlpha="0" :src="filesrc"></model-obj>
 </template>
 
 <script>
@@ -9,8 +9,19 @@ export default {
   components: {
     ModelObj
   },
-  mounted() {
-    console.log(this.$store.getters.getFile.name);
+  data: function() {
+    return {
+      filesrc: "/files/m1_garand.obj"
+    };
+  },
+    mounted: function() {
+    this.filesrc=this.$store.getters.getFile.path
+  },
+  watch: {
+    "$store.state.file": function() {
+      this.filesrc = this.$store.getters.getFile.path;
+      console.log(this.$store.getters.getFile.path);
+    }
   }
 };
 </script>

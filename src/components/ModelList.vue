@@ -1,7 +1,7 @@
 <template>
   <div id="modelList">
-    <ul v-for="file in modellist" :key="file.name" class="list-group">
-      <li :click="changeFile()" class="list-group-item">{{ file.name }}</li>
+    <ul v-for="file in modellist" :key="file.name" class="list-group" v-cloak>
+      <li class="list-group-item" @click="changeFile(file)">{{ file.name }}</li>
     </ul>
   </div>
 </template>
@@ -24,9 +24,15 @@ export default {
         .then(response => response.json())
         .then(data => (this.modellist = data));
     },
-    changeFile() {
-      this.$store.dispatch("changeFile", this.modellist[3]);
+    changeFile(file) {
+      this.$store.commit("changeFile", file);
     }
   }
 };
 </script>
+
+<style scoped>
+[v-cloak] {
+  display: none;
+}
+</style>
