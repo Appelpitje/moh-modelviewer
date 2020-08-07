@@ -7,7 +7,7 @@ export default new Vuex.Store({
   state: {
     file: {
       name: "m1_garand.obj",
-      path: "/obj/m1_garand.obj"
+      path: "/files/m1_garand.obj"
     }
   },
   getters: {
