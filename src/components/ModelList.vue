@@ -20,7 +20,7 @@ export default {
   },
   methods: {
     getFileData() {
-      fetch("http://localhost:8080/files.json")
+      fetch("/files.json")
         .then(response => response.json())
         .then(data => (this.modellist = data));
     },
