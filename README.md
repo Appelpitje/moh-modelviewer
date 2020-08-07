@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 # modelviewer
 
 ## Project setup
@@ -22,3 +23,8 @@ npm run lint
 
 ### Customize configuration
 See [Configuration Reference](https://cli.vuejs.org/config/).
+=======
+# MOH-modelviewer
+
+MOH AA,SH,BT Modelviewer made with vue
+>>>>>>> f4b3ac8fb30e08d5f21931a1e5fdb797639bcd99
