@@ -14,13 +14,12 @@ export default {
       filesrc: "/files/m1_garand.obj"
     };
   },
-    mounted: function() {
-    this.filesrc=this.$store.getters.getFile.path
+  mounted: function() {
+    this.filesrc = this.$store.getters.getFile.path;
   },
   watch: {
     "$store.state.file": function() {
       this.filesrc = this.$store.getters.getFile.path;
-      console.log(this.$store.getters.getFile.path);
     }
   }
 };

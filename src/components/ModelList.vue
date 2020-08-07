@@ -35,4 +35,13 @@ export default {
 [v-cloak] {
   display: none;
 }
+
+#modelList {
+  overflow-y: auto;
+  height: 100vh;
+}
+
+.list-group {
+  overflow-y: auto;
+}
 </style>
