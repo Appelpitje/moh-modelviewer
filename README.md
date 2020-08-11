@@ -1,5 +1,6 @@
-<<<<<<< HEAD
 # modelviewer
+
+[![Netlify Status](https://api.netlify.com/api/v1/badges/dd635388-559f-4543-b4b3-c7dc71fa1f9d/deploy-status)](https://app.netlify.com/sites/mohmodelviewer/deploys)
 
 ## Project setup
 ```
@@ -27,4 +28,3 @@ See [Configuration Reference](https://cli.vuejs.org/config/).
 # MOH-modelviewer
 
 MOH AA,SH,BT Modelviewer made with vue
->>>>>>> f4b3ac8fb30e08d5f21931a1e5fdb797639bcd99
